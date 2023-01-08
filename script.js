@@ -14,19 +14,19 @@ form.addEventListener('submit', (event) => {
 });
 
 
-function error(index){
-    button[index].style.display = 'block';
-    
-}
 
 
 function setError(index){
     spans[index].style.display = 'block';
+    button[index].style.display = 'block';
     
 }
 
 function removeError(index){
     spans[index].style.display = '';
+    button[index].style.display = '';
+    
+
 }
 
 function nameValidate(){
@@ -46,10 +46,10 @@ function emailValidate(){
 }
 
 function error(){
-    if(button.test(campos[6].value)){
-        error(6);
+    if(campos){
+        error();
     }else {
-        removeError(6);
+        removeError();
     }
 }
 
