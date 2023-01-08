@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <title>Jumpy</title>
+</head>
+<body>
+
+    <header>
+        <img src="assets/logodnc.png" alt="">
+    </header>
+    <main>
+        <img src="assets/jumpy.png" alt="">
+        <h1>Bem vindo ao Jumpy!</h1>
+    </main>
+    <section>
+        <form id="form">
+            <span>Nome completo:</span>
+            <input type="text" placeholder="Nome completo" class="inputs required" oninput="nameValidate()">
+            <span class="span-required">*Campo Obrigatório*</span>
+            
+            <span>Email:</span>
+            <input type="email" placeholder="Email@email.com" class="inputs required" oninput="emailValidate()">
+            <span class="span-required">*Campo Obrigatório*</span>
+
+            <span>Telefone:</span>
+            <input type="tel" placeholder="(00) 0 0000-0000">
+
+            <span>CPF:</span>
+            <input type="text" placeholder="000.000.000-00">
+
+            <span>Senha:</span>
+            <input type="password" placeholder="************">
+
+            <button type="submit" class="inputs required" >Cadastrar</button>
+            <span class="span-requiredd" oninput="error()">Campos obrigatórios não registrados.</span>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
